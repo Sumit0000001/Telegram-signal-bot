@@ -10,7 +10,18 @@
 
 '''
 
+import sys
+import os
+
+# Add the project root directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Import without 'src'
+from trade_listener import bot
+
+
 from src.trade_listener import bot
+
 
 if __name__ == "__main__":
     print("🚀 Trade Bot is running...")

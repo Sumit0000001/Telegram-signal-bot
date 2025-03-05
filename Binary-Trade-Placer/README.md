@@ -56,6 +56,20 @@ Check for any errors in the console.
 Send a test signal in the Telegram chat.
 Verify that the bot responds and places trades correctly.
 
+Telegram signal bot/
+│── Binary-Trade-Placer/
+│   ├── config/
+│   │   ├── __init__.py   ✅ (Should exist)
+│   │   ├── config.py     ✅ (Contains API tokens and settings)
+│   ├── src/
+│   │   ├── trade_listener.py  ✅ (Listens to Telegram signals)
+│   │   ├── trade_executor.py  ✅ (Executes trades)
+│   │   ├── signal_parser.py   ✅ (Parses signals)
+│   ├── .env ✅ (Stores sensitive API keys)
+│   ├── requirements.txt ✅ (Has all dependencies)
+│── venv/  ✅ (If using a virtual environment)
+
+
 
 🎯 Run the Bot
 
@@ -64,6 +78,8 @@ python src/main.py
 
 🔥 What to Do Next?
 If it runs successfully, congratulations! 🎉 Your bot is ready.
+
 If you face any errors, share the error message, and we’ll help you debug! 🚀
+
 👨‍💻 Creators:
 Sumit Ruhal & Parvesh Jangra
